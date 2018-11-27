@@ -1,0 +1,13 @@
+div {
+    border: 2px solid black;
+    margin: 10px;
+  }
+  body{
+	
+    background-image: url("../../assets/images/happyBalloons.jpg");  
+    height: 100%; 
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
