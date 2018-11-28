@@ -20,6 +20,10 @@ p {
   color: var(--red);
 }
 
+#navbar {
+  /* new variable in local scope  */
+  --nav-red: #ff6f19;
+}
 #navbar a {
   /* color: #ff6f69; */
   color: var(--red);
@@ -28,9 +32,16 @@ p {
 .item {
   /* overide the red color for items inherited down the document tree  */
   --red: #ff8e69;
+  /* locally define yellow item  this could also have been declared in its own .item then used in this one  */
+  --item-yellow: #fffc5c;
 
-  /* background: #ffcc5c; */
-  background: var(--yellow);
+  background: var(--item-yellow);
+}
+
+/* call out a featured item by overiding the CSS just for it */
+.featured {
+  --yellow: #ffe55b;
+  --red: #ff5564;
 }
 
 button {
