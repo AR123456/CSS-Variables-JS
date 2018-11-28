@@ -1,0 +1,41 @@
+/* define the variables in the root psudoclass */
+
+:root {
+  --red: #f50f07;
+  --beige: #ffeead;
+  --yellow: #ffcc5c;
+}
+
+html,
+body {
+  /* background: #ffeead; */
+  background: var(--beige);
+  /* color: #ff6f69; */
+  color: var(--red);
+}
+
+h1,
+p {
+  /* color: #ff6f69; */
+  color: var(--red);
+}
+
+#navbar a {
+  /* color: #ff6f69; */
+  color: var(--red);
+}
+
+.item {
+  /* overide the red color for items inherited down the document tree  */
+  --red: #ff8e69;
+
+  /* background: #ffcc5c; */
+  background: var(--yellow);
+}
+
+button {
+  /* background: #ff6f69; */
+  background: var(--red);
+  color: var(--yellow);
+  /* color: #ffcc5c; */
+}
