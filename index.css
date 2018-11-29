@@ -1,52 +1,59 @@
-/* define the variables in the root psudoclass */
+/*Variable declarations*/
 
 :root {
-  --red: #f50f07;
+  --red: #ff6f69;
   --beige: #ffeead;
   --yellow: #ffcc5c;
 }
 
+.grid {
+  --columns: 200px 200px;
+}
+
+/* Styles */
+
 html,
 body {
-  /* background: #ffeead; */
   background: var(--beige);
-  /* color: #ff6f69; */
   color: var(--red);
 }
 
 h1,
 p {
-  /* color: #ff6f69; */
   color: var(--red);
 }
 
-#navbar {
-  /* new variable in local scope  */
-  --nav-red: #ff6f19;
-}
 #navbar a {
-  /* color: #ff6f69; */
   color: var(--red);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--columns);
+  grid-auto-rows: 140px;
+  grid-gap: 20px;
+  justify-content: center;
 }
 
 .item {
-  /* overide the red color for items inherited down the document tree  */
-  --red: #ff8e69;
-  /* locally define yellow item  this could also have been declared in its own .item then used in this one  */
-  --item-yellow: #fffc5c;
-
-  background: var(--item-yellow);
-}
-
-/* call out a featured item by overiding the CSS just for it */
-.featured {
-  --yellow: #ffe55b;
-  --red: #ff5564;
+  background: var(--yellow);
 }
 
 button {
-  /* background: #ff6f69; */
   background: var(--red);
   color: var(--yellow);
-  /* color: #ffcc5c; */
 }
+
+@media all and (max-width: 450px) {
+  .grid {
+    --columns: 200px;
+  }
+  :root {
+    --beige: rgba(238, 255, 238, 0.933);
+  }
+}
+/*
+  --yellow: #ffe55b;
+  --red: #ff5564;
+
+*/
