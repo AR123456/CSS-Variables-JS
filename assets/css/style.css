@@ -6,35 +6,33 @@ body {
   /* If you really want to make sure that everyone sees the same font use font imbeding(Google Fonts has some ) pick them and then ad the link in index html file  */
 }
 h1 {
-/* use a % to make it responses to a user resizing.  here 562.5 % is = 90 pixles, would be better tu use em  */
-/*  em means the phonetic pronunciation of the letter M , is the  size the width of captial letter M   */
-/*  16 px = 100% = 1em, 90px =5.62 em  */
-/* em and % are responsive  and the values are inherited , added from parent to child .  px are static so are not cummulative  */
-/* rem is better it is the root M  will not act to accumulate from its parents  rem is the best to use  */
-  font-size: 5.62rem; 
+  /* use a % to make it responses to a user resizing.  here 562.5 % is = 90 pixles, would be better tu use em  */
+  /*  em means the phonetic pronunciation of the letter M , is the  size the width of captial letter M   */
+  /*  16 px = 100% = 1em, 90px =5.62 em  */
+  /* em and % are responsive  and the values are inherited , added from parent to child .  px are static so are not cummulative  */
+  /* rem is better it is the root M  will not act to accumulate from its parents  rem is the best to use  */
+  font-size: 5.62rem;
   margin: 50px auto 0 auto;
   /* width: 10%;
   /* a block element with width set will need to use the margin to center */
   /* margin: 0 auto; */
   font-family: "Sacramento", cursive;
-  color:#66BFBF;
-  
+  color: #66bfbf;
 }
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem; 
-  color:#66BFBF;
- 
+  font-size: 2.5rem;
+  color: #66bfbf;
 }
 h3 {
   font-family: "Montserrat", sans-serif;
-  color:#11999E;
+  color: #11999e;
 }
 div {
   background-color: #e4f9f5;
 }
-a{
-  color:#11999E;
+a {
+  color: #11999e;
 }
 span {
 }
@@ -90,10 +88,26 @@ Fixed
 }
 /*  changing the text font will affect the position of the elements  */
 .react {
-  height: 50px;
-  width: 50px;
+  /* height: 200px;
+  width: 200px; */
+  width: 25%;
+  float: left;
+  margin-right: 30px;
 }
 .fullstack {
-  height: 50px;
-  width: 75px;
+  /* height: 200px;
+  width: 260px; */
+  width: 25;
   background-color: #e4f9f5;
+  border-radius: 100%;
+  float: right;
+  margin-left: 30px;
+}
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+/* it is better to use the float property to wrap or not text around an image.  User blocks, margins ect to postiion elements on a page */
