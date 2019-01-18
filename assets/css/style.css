@@ -1,5 +1,6 @@
 body {
   /* text align property must be set inside the parent container, this works on inline Block elements or full line elements   */
+  color: #40514e;
   margin: 0;
   text-align: center;
   font-family: "Merriweather", serif;
@@ -33,8 +34,15 @@ div {
 }
 a {
   color: #11999e;
+  padding: 25px;
 }
 span {
+}
+hr {
+  border: dotted #d3e2e2 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
 }
 /* css box model div will expand to the height and width and pushes other content out of the way 
 a % of the viewport of screen size 
@@ -54,6 +62,7 @@ this is shown in the inspector tools
   padding-top: 100px;
 }
 .middle-container {
+  padding: 100px 0;
 }
 
 .bottom-container {
@@ -67,6 +76,8 @@ Relative position the seletected element relative to how it would have been posi
 Absolute
 Fixed 
 */
+  background-color: #66bfbf;
+  padding-top: 50px;
 }
 .pro {
   text-decoration-line: underline;
@@ -82,11 +93,14 @@ Fixed
 }
 .bottom-cloud {
   position: absolute;
-  left: 300ps;
+  left: 250px;
   /* from the bottom of the "top-conatiner" */
   bottom: 300px;
 }
 /*  changing the text font will affect the position of the elements  */
+.me {
+  width: 18%;
+}
 .react {
   /* height: 200px;
   width: 200px; */
@@ -111,3 +125,38 @@ Fixed
 }
 
 /* it is better to use the float property to wrap or not text around an image.  User blocks, margins ect to postiion elements on a page */
+.copyright {
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+.butn {
+  background: ;
+  background-image: -webkit-linear-gradient(top);
+  background-image: -moz-linear-gradient(top);
+  background-image: -ms-linear-gradient(top);
+  background-image: -o-linear-gradient(top);
+  background-image: linear-gradient(to bottom);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid black 2px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #fcac3c;
+  background-image: -webkit-linear-gradient(top, #fcac3c, #eb26eb);
+  background-image: -moz-linear-gradient(top, #fcac3c, #eb26eb);
+  background-image: -ms-linear-gradient(top, #fcac3c, #eb26eb);
+  background-image: -o-linear-gradient(top, #fcac3c, #eb26eb);
+  background-image: linear-gradient(to bottom, #fcac3c, #eb26eb);
+  text-decoration: none;
+}
+.contact-me {
+  padding-bottom: 50px;
+}
