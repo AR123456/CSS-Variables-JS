@@ -1,25 +1,132 @@
 body {
-  background-image: url("../images/happyBalloons.jpg");
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
 }
-.red {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  left: 200px;
+h1 {
+  font-size: 5.62rem;
+  margin: 50px auto 0 auto;
+
+  font-family: "Sacramento", cursive;
+  color: #66bfbf;
 }
-.blue {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  position: relative;
-  bottom: 100px;
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #66bfbf;
 }
-.yellow {
-  background-color: yellow;
-  width: 100px;
-  height: 100px;
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+}
+div {
+  background-color: #e4f9f5;
+}
+a {
+  color: #11999e;
+  padding: 25px;
+  font-family: "Monsterrat", sans-serif;
+  text-decoration: none;
+}
+a:hover {
+  color: 063535;
+}
+span {
+}
+hr {
+  border: dotted #d3e2e2 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+.top-container {
+  background-color: #e4f9f5;
   position: relative;
-  left: 100px;
-  bottom: 200px;
+  padding-top: 100px;
+}
+.middle-container {
+  padding: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding-top: 50px;
+}
+.pro {
+  text-decoration-line: underline;
+  font-weight: normal;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+
+  top: 50px;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+
+  bottom: 300px;
+}
+
+.me {
+  width: 18%;
+}
+.react {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+.fullstack {
+  width: 25;
+  background-color: #e4f9f5;
+  border-radius: 100%;
+  float: right;
+  margin-left: 30px;
+}
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+/ .copyright {
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  font-size: 0.77rem;
+}
+.butn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #1999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #1999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #1999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #1999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #1999e);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.butn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #3498db);
+  background-image: -moz-linear-gradient(top, #30e3cb, #3498db);
+  background-image: -ms-linear-gradient(top, #30e3cb, #3498db);
+  background-image: -o-linear-gradient(top, #30e3cb, #3498db);
+  background-image: linear-gradient(to bottom, #30e3cb, #3498db);
+  text-decoration: none;
+}
+.contact-me {
+  padding-bottom: 10px;
+}
+.brand {
+  margin-bottom: 40px;
 }
