@@ -1,11 +1,13 @@
-const dogs = new Map();
+//weak set gets garbage selected
+//weak map cannot be looped or counted
+// the will get garbabe collected
 
-dogs.set("Pixie", 8);
-dogs.set("Brandy", 5);
-dogs.set("Sugar", 10);
+//  reg map vs weak map
+const dog1 = { name: "pixie" };
+const dog2 = { name: "brandy" };
 
-dogs.forEach((val, key) => console.log(val, key));
+const strong = new Map();
+const weak = new WeakMap();
 
-for (const [dog] of dogs) {
-  console.log(dog);
-}
+strong.set(dog1, "Pixie is the best");
+weak.set(dog2, "Brandy is the 2nd best");
