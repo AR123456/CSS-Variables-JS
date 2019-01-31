@@ -30,7 +30,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* navigation bar */
@@ -63,6 +63,9 @@ p {
   width: 60%;
   /*  using the rotate function  */
   transform: rotate(25deg);
+ 
+  position: absolute;
+  right:30%;
 }
 
 .icon {
@@ -77,6 +80,9 @@ p {
 /* Features section  */
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index:1;
 }
 
 .feature-box {
