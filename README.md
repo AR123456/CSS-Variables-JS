@@ -1,3 +1,3 @@
 # Tinder like Dog Finder
 
-# exaple Web site
+# Developer Site
